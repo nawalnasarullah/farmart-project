@@ -1,0 +1,277 @@
+*{
+    --light-gray: #f8f9fa;
+    --dark-gray: #c5c5c5;
+    --yellow: #fab528;
+    --black: #000;
+}
+
+body{
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Mulish', sans-serif;
+}
+
+.logo-img{
+    width: 150px;
+}
+
+.search-form {
+    display: flex;
+    align-items: flex-end;
+    background-color: var(--light-gray);
+    padding: 8px;
+    width: 500px;
+}
+
+
+.category-dropdown {
+    flex: 2;
+    margin-right: 40px;
+    opacity: 0;
+}
+
+.form-control{
+    border: 0px;
+    background-color: var(--light-gray);
+    border-radius: 0px;
+    font-size: 14px;
+    padding: 0.375rem 1.25rem;
+}
+
+.form-control:focus{
+    background-color: transparent;
+    box-shadow: none;
+    border-color: var(--dark-gray);
+}
+
+.search-input {
+    flex: 3;
+    border-left: 1px solid var(--dark-gray);
+    background-color: transparent !important;
+
+}
+
+.search-input:focus {
+    background-color: transparent; 
+}
+
+.search-button{
+    border: 0;
+    background-color: var(--light-gray);
+}
+.search-icon .material-symbols-outlined{
+    color: var(--dark-gray);
+    font-weight: 200;
+}
+
+.category-parent{
+    position: relative;
+}
+.expand-button{
+    position: absolute;
+    bottom: 15%;
+    left: 8%;
+    cursor: pointer;
+}
+
+.expand-button .material-symbols-outlined{
+    font-size: 18px;
+}
+
+.expand-button span{
+    font-size: 12px;
+}
+
+.nav-item{
+    padding: 10px;
+}
+
+.header-icon{
+    color: var(--black);
+}
+
+.nav-link{
+    position: relative;
+    padding-bottom: 0;
+    padding-top: 18px;
+}
+
+.nav-link .material-symbols-outlined{
+    font-size: 26px;
+}
+
+.header-item-counter{
+    background-color: var(--yellow);
+    border-radius: 3px;
+    color: var(--black);
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1;
+    min-width: 18px;
+    padding: 5px 5px 3px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 4px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.cart-container {
+    padding-top: 5px;
+    position: relative;
+    display: inline-block;
+}
+
+.cart-link{
+    text-decoration: none;
+    color: var(--dark-gray);
+}
+
+.cart-text {
+    cursor: pointer;
+}
+
+.dollar-sign{
+    color: var(--black);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cart-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    display: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+.cart-dropdown a {
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+    color: #333;
+}
+
+.cart-dropdown a:hover {
+    background-color: #f5f5f5;
+}
+
+.cart-container:hover .cart-dropdown {
+    display: block;
+}
+
+.navbar-toggler{
+    border: 0;
+}
+
+
+.offcanvas-header{
+    background-color: var(--yellow);
+    flex-direction: row-reverse;
+}
+
+.btn-close{
+    background-image: url(../images/back.png);
+    font-size: x-large;
+    color: #000;
+}
+
+.offcanvas-title{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+
+/*------------Secondary Nav-----------*/
+
+.secondary-nav .navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.secondary-nav .navbar-nav .nav-item .nav-link{
+     padding: 3px 12px;
+     font-size: 14px;
+     font-weight: 600;
+     color: var(--black);
+     display: flex;
+     align-items: center;
+}
+
+.secondary-nav .navbar-nav .nav-item{
+    border-radius: 6px;
+}
+
+.ham-icon{
+    padding-right: 8px;
+}
+
+.shop-dropdown{
+    background-color: var(--yellow);
+}
+
+#myDropdown:hover .dropdown-menu{
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.secondary-nav .navbar-nav .nav-item .nav-link:hover{
+    color: var(--yellow);
+}
+
+.price-symbol{
+    rotate: 90deg;
+    font-size: 18px !important;
+}
+
+.expand-icon{
+    font-size: 26px !important;
+    font-weight: 300;
+    padding-left: 2px;
+}
+
+.recently-viewed{
+    padding-top: 0;
+}
+
+.recently-viewed .cart-text div{
+    display: flex;
+    align-items: center;
+    color: var(--black);
+    font-weight: 600;
+}
+
+.recycle-icon{
+    font-size: 18px!important;
+    padding-right: 8px;
+    padding-top: 4px;
+    color: var(--dark-gray);
+}
+
+@media (min-width: 768px){
+
+.offset-md-3 {
+    margin-left: 12%;
+}
+}
+
+@media only screen and (max-width: 1199px) {
+   
+    .header{
+        display: none !important;
+    }
+
+    .header-2{
+        display: initial !important;
+    }
+  }
