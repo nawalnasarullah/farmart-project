@@ -266,7 +266,6 @@ body {
 
 .hero-section{
     position: relative;
-    display: flex;
 }
 
 .hero-section img{
@@ -275,7 +274,6 @@ body {
 }
 
 .carousel-wrapper{
-    flex: 3;
     position: absolute;
     top: 10%;
     bottom: 10%;
@@ -310,11 +308,9 @@ body {
 
 
 .hero-img-wrapper{
-    flex: 1;
     position: absolute;
     right: 0;
     top: 10%;
-    
 }
 
 .hero-img-wrapper img{
@@ -339,9 +335,100 @@ body {
         display: none !important;
     }
 
-    
-
     .header-2{
         display: block !important;
+        
     }
+
+   
+
+    .carousel-item img{
+        width: 90% !important;
+        
+    }
+
+    
+
+    .hero-img-wrapper img{
+        width: 85%;
+    }
+
+    .next-div{
+        left: 81%;
+        top: 95%;
+    }
+
+    .prev-div{
+        left: 85%;
+    }
+  }
+
+  @media only screen and (max-width: 991px){
+
+    .carousel-item img{
+        width: 88% !important;
+        height: 370px !important;
+    }
+
+
+    .hero-img-wrapper{
+        float: right;
+    }
+
+    .hero-img-wrapper img{
+        width: 83%;
+        height: 370px !important;
+    }
+
+    .next-div{
+        left: 79%;
+        top: 95%;
+    }
+
+    .prev-div{
+        left: 83%;
+    }
+
+  }
+
+  @media only screen and (max-width: 899px){
+
+    .hero-pic{
+        height: 680px !important;
+    }
+
+    .carousel-item img{
+        width: 90% !important;
+        height: 300px !important;
+    }
+    .carousel-wrapper{
+        position: absolute;
+        top: 5%;
+        right: 0;
+        left: 10%;
+        bottom: 10%;
+    }
+
+    .hero-img-wrapper img{
+        width: 90%;
+        height: 300px !important;
+    }
+
+    .hero-img-wrapper{
+        position: absolute;
+        top:52%;
+        right: 0;
+        left: 10%
+    }
+
+    .next-div{
+        left: 77%;
+        top: 93%;
+    }
+
+    .prev-div{
+        left: 82%;
+        top: 93%
+    }
+
   }
