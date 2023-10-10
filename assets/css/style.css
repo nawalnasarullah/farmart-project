@@ -1,6 +1,7 @@
 *{
     --light-gray: #f8f9fa;
     --dark-gray: #c5c5c5;
+    --darker-gray: #6c757d;
     --yellow: #fab528;
     --black: #000;
     --white: #fff;
@@ -329,12 +330,18 @@ body {
 }
 
 
-/*--------------main--------*/
+                           /*--------------main-------------*/
+
+/*-----------PRODUCT-------------*/
 
 .product-heading{
     padding-left: 12px;
     margin-top: 20px;
     margin-bottom: 30px;
+}
+
+.product-carousel .owl-stage-outer{
+    padding-top: 5px;
 }
 
 .product-heading h2{
@@ -346,7 +353,7 @@ body {
     display: none;
 }
 
-.owl-item{
+.product-carousel .owl-item{
     padding: 8px;
 }
 
@@ -413,6 +420,60 @@ button.owl-next:hover span{
     font-size: 17px;
     font-weight: 600;
 }
+
+/*---------------BRAND----------------*/
+
+.brand-carousel .owl-stage-outer{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.brand-carousel .item img{
+    width: 97%;
+}
+
+.brand-carousel .item a{
+    text-decoration: none;
+}
+
+.brand-carousel .item h6{
+    color: var(--darker-gray);
+    font-weight: 600;
+}
+
+.brand-carousel .item h5{
+    color: var(--black);
+    font-weight: 600;
+}
+
+.brand-carousel .item h5:hover{
+    color: var(--yellow);
+    transition: 0.5s;
+}
+
+.brand-carousel .owl-prev{
+    font-size: 20px !important;
+    opacity: 1 !important;
+    position: absolute;
+    top: -22%;
+    right: 3%;
+    width: 25px;
+    background-color: var(--light-gray) !important;
+}
+
+
+.brand-carousel .owl-next{
+    display: block !important;
+    font-size: 20px !important;
+    opacity: 1 !important;
+    position: absolute !important;
+    top: -22%;
+    right: 8px;
+    width: 25px;
+    background-color: var(--light-gray) !important;
+}
+
+
 
 @media (min-width: 768px){
 
