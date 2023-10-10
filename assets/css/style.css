@@ -163,10 +163,12 @@ body {
 
 .cart-dropdown a:hover {
     background-color: #f5f5f5;
+    transition: 0.5s;
 }
 
 .cart-container:hover .cart-dropdown {
     display: block;
+    transition: 0.5s;
 }
 
 .navbar-toggler{
@@ -224,11 +226,18 @@ body {
     position: absolute;
     top: 100%;
     left: 0;
+    transition: 0.5s;
 }
 
 .secondary-nav .navbar-nav .nav-item .nav-link:hover{
     color: var(--yellow);
+    transition: 0.5s;
 }
+
+.secondary-nav .navbar-nav .nav-item .non-yellow-link:hover{
+    color: var(--black);
+}
+
 
 .price-symbol{
     rotate: 90deg;
@@ -304,6 +313,7 @@ body {
 
 .carousel-control-prev:hover .material-symbols-outlined, .carousel-control-next:hover .material-symbols-outlined{
     background-color: var(--yellow);
+    transition: 0.5s;
 }
 
 
@@ -352,6 +362,7 @@ button.owl-prev{
 
 button.owl-prev:hover span{
     color: var(--black) !important;
+    transition: 0.5s;
 }
 
 button.owl-next{
@@ -367,6 +378,7 @@ button.owl-next{
 
 button.owl-next:hover span{
     color: var(--black) !important;
+    transition: 0.5s;
 }
 
 .product-carousel .item{
@@ -374,9 +386,26 @@ button.owl-next:hover span{
     border-radius: 6px;
 }
 
+.product-carousel .item h6{
+    padding: 25px 0;
+    font-size: 17px;
+    font-weight: 600;
+}
+
 .product-carousel .item a{
     text-decoration: none;
     color: var(--black);
+}
+
+.product-carousel .item a:hover{
+    color: var(--yellow);
+    transition: 0.5s;
+}
+
+.product-carousel .item:hover{
+    background-color: var(--white);
+    box-shadow: 0 1.5rem 2rem 0 hsla(225,2%,52%,.15);
+    transition: 0.5s;
 }
 
 .product-carousel .item h6{
