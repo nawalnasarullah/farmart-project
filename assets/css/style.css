@@ -318,6 +318,73 @@ body {
     border-radius: 6px;
 }
 
+
+/*--------------main--------*/
+
+.product-heading{
+    padding-left: 12px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.product-heading h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.owl-theme .owl-dots {
+    display: none;
+}
+
+.owl-item{
+    padding: 8px;
+}
+
+button.owl-prev{
+    font-size: 20px !important;
+    opacity: 1 !important;
+    position: absolute;
+    top: -30%;
+    right: 3%;
+    width: 25px;
+    background-color: var(--light-gray) !important;
+}
+
+button.owl-prev:hover span{
+    color: var(--black) !important;
+}
+
+button.owl-next{
+    display: block !important;
+    font-size: 20px !important;
+    opacity: 1 !important;
+    position: absolute !important;
+    top: -30%;
+    right: 8px;
+    width: 25px;
+    background-color: var(--light-gray) !important;
+}
+
+button.owl-next:hover span{
+    color: var(--black) !important;
+}
+
+.product-carousel .item{
+    background-color: var(--light-gray);
+    border-radius: 6px;
+}
+
+.product-carousel .item a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+.product-carousel .item h6{
+    padding: 25px 0;
+    font-size: 17px;
+    font-weight: 600;
+}
+
 @media (min-width: 768px){
 
 .offset-md-3 {
