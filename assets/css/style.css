@@ -534,7 +534,7 @@ button.owl-next:hover span{
     transition: 0.5s;
 }
 
-.saving-carousel .item{
+.saving-carousel .item .hover-div{
     border: solid;
     border-color: var(--gray-gray);
     border-width: 1px 0 1px 1px;
@@ -672,8 +672,8 @@ button.owl-next:hover span{
     padding: 12px 18px;
     border: solid;
     border-color: var(--gray-gray);
-    border-width: 0 1px 1px 0;
-    display: none;
+    border-width: 0 1px 1px 1px;
+    opacity: 0;
 }
 
 .item-bottom .cart-box {
@@ -717,8 +717,12 @@ button.owl-next:hover span{
     font-weight: 600;
 }
 
+.saving-carousel .item:hover .hover-div{
+    border-width: 1px 0 0 1px;
+}
+
 .saving-carousel .item:hover .item-bottom{
-    display: block !important;
+    opacity: 1;
     transition: 0.5s;
 }
 
