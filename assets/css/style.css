@@ -1,6 +1,7 @@
 *{
     --light-gray: #f8f9fa;
     --dark-gray: #c5c5c5;
+    --gray-gray: #c9c9c9;
     --darker-gray: #6c757d;
     --darkest-gray: #333;
     --yellow: #fab528;
@@ -8,6 +9,10 @@
     --white: #fff;
     --cream: #ccc;
     --maroon: #cb4321;
+    --orange: #ff8c46;
+    --blue: #09f;
+    --grey: #808080;
+    --bar-grey: #e9ecef;
 }
 
 body{
@@ -527,6 +532,216 @@ button.owl-next:hover span{
 .product-countdown a:hover{
     color: var(--yellow);
     transition: 0.5s;
+}
+
+.saving-carousel .item{
+    border: solid;
+    border-color: var(--gray-gray);
+    border-width: 1px 0 1px 1px;
+}
+
+
+.item-pic{
+    position: relative;
+}
+
+.item-pic img{
+    padding: 12px 18px;
+}
+
+.item-pic .ribbon{
+    position: absolute;
+    background-color: var(--orange);
+    color: var(--white);
+    top: 5%;
+    left: 14%;
+    font-weight: 600;
+    border-radius: 3px;
+    padding: 0 5px;
+}
+
+.item-pic .emotion-loop{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    opacity: 0;
+}
+
+.item-pic .emotion-loop a{
+    text-decoration: none;
+    color: var(--yellow);
+    display: block;
+    padding: 2px;
+}
+
+.item-pic .emotion-loop a span{
+    font-size: 18px;
+}
+
+.item-pic .emotion-loop:hover{
+    opacity: 1;
+    transition: 0.3s ease;
+}
+
+.item-content{
+    padding: 12px 18px;
+}
+
+.item-content .item-heading a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+.item-content .item-heading a h6{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.item-content .item-heading a span{
+    font-size: 15px;
+    color: var(--blue);
+}
+
+.item-content .item-heading a span:hover{
+    color: var(--yellow);
+    transition: 0.5s;
+}
+
+.item-content .item-heading a h6:hover{
+    color: var(--yellow);
+    transition: 0.5s;
+}
+
+.item-content .item-rating ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.item-content .item-rating ul li i{
+    font-size: 10px;
+    color: var(--cream);
+}
+
+.item-content .item-rating ul li i.filled{
+    font-size: 10px;
+    color: var(--yellow);
+}
+
+.item-content .item-rating .price{
+    display: flex;
+}
+
+.item-content .item-rating .price h6{
+    color: var(--maroon);
+    font-weight: 600;
+    margin: 0;
+}
+
+.item-content .item-rating .price span{
+    text-decoration: line-through;
+    color: var(--grey);
+    padding-left: 5px;
+}
+
+.item-content .item-rating .sold .bar{
+    width: 95%;
+    height: 10px;
+    background-color: var(--bar-grey);
+    position: relative;
+}
+
+.item-content .item-rating .sold .bar .bar-overlay{
+    position: absolute;
+    right: 70%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--yellow);
+}
+
+.item-content .item-rating .sold h6{
+    color: var(--black);
+    font-weight: 600;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.item-bottom{
+    padding: 12px 18px;
+    border: solid;
+    border-color: var(--gray-gray);
+    border-width: 0 1px 1px 0;
+    display: none;
+}
+
+.item-bottom .cart-box {
+    display: inline-block;
+    border: 1px solid var(--dark-gray);
+    padding: 3px 8px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.item-bottom .cart-box span{
+    font-size: 16px;
+    font-weight: 600;
+}
+.item-bottom .cart-button {
+    font-size: 22px;
+    cursor: pointer;
+    padding: 0 12px;
+    border: 0px solid;
+    background-color: var(--white);
+    color: var(--darker-gray);
+}
+
+.add-cart-button{
+    padding: 12px 11px 5px 11px;
+    background-color: var(--yellow);
+    border-radius: 3px;
+    align-items: normal;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+
+.add-cart-button .material-symbols-outlined{
+    font-size: 15px;
+    padding-right: 6px;
+}
+
+.add-cart-button h6{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.saving-carousel .item:hover .item-bottom{
+    display: block !important;
+    transition: 0.5s;
+}
+
+.saving-carousel .owl-prev{
+    font-size: 20px !important;
+    opacity: 1 !important;
+    position: absolute;
+    top: -12%;
+    right: 3%;
+    width: 25px;
+    background-color: var(--light-gray) !important;
+}
+
+
+.saving-carousel .owl-next{
+    display: block !important;
+    font-size: 20px !important;
+    opacity: 1 !important;
+    position: absolute !important;
+    top: -12%;
+    right: 8px;
+    width: 25px;
+    background-color: var(--light-gray) !important;
 }
 
 

@@ -88,3 +88,22 @@ function updateCountdown() {
 updateCountdown();
 
 const timerInterval = setInterval(updateCountdown, 1000);
+
+const decrementButton = document.getElementById("decrement");
+        const incrementButton = document.getElementById("increment");
+        const itemCount = document.getElementById("item-count");
+
+        let count = 0;
+
+        // Decrement button click handler
+        decrementButton.addEventListener("click", () => {
+            if (count > 0) {
+                count--;
+                itemCount.innerText = count;
+            }
+        });
+
+        incrementButton.addEventListener("click", () => {
+            count++;
+            itemCount.innerText = count;
+        });
