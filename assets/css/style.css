@@ -13,6 +13,9 @@
     --blue: #09f;
     --grey: #808080;
     --bar-grey: #e9ecef;
+    --bg-grey: #f3f3f3;
+    --green: #008000;
+    --footer-text: #555;
 }
 
 body{
@@ -560,6 +563,18 @@ button.owl-next:hover span{
     padding: 0 5px;
 }
 
+.item-pic .green-ribbon{
+    position: absolute;
+    background-color: var(--green);
+    color: var(--white);
+    top: 5%;
+    left: 14%;
+    font-weight: 600;
+    border-radius: 3px;
+    padding: 0 8px;
+}
+
+
 .item-pic .emotion-loop{
     position: absolute;
     top: 10px;
@@ -635,6 +650,12 @@ button.owl-next:hover span{
 
 .item-content .item-rating .price h6{
     color: var(--maroon);
+    font-weight: 600;
+    margin: 0;
+}
+
+.item-content .item-rating .og-price h6{
+    color: var(--green);
     font-weight: 600;
     margin: 0;
 }
@@ -726,6 +747,11 @@ button.owl-next:hover span{
     transition: 0.5s;
 }
 
+.saving-carousel .item:hover .emotion-loop{
+    opacity: 1;
+    transition: 0.5s;
+}
+
 .saving-carousel .owl-prev{
     font-size: 20px !important;
     opacity: 1 !important;
@@ -749,6 +775,271 @@ button.owl-next:hover span{
 }
 
 
+/*---------Health Blog--------*/
+
+.health-blog {
+    background-color: var(--bg-grey);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.health-heading {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.health-heading h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.health-heading .offer-class a {
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--darkest-gray);
+    display: flex;
+    align-items: center;
+}
+
+.health-heading .offer-class a:hover {
+    color: var(--yellow);
+    transition: 0.3s;
+}
+
+.health-content {
+    background-color: var(--white);
+    border-radius: 10px;
+    display: flex;
+}
+
+.images-content {
+    width: 100%;
+    display: flex;
+    padding: 20px 5px;
+}
+
+.health-img {
+    padding-left: 18px;
+    padding-right: 18px;
+    overflow: hidden; 
+}
+
+.img-border {
+    border-right: 1px solid #eee;
+}
+
+.health-img a img {
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.health-inner-content .top{
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.health-inner-content .top a:hover{
+    color: var(--yellow);
+    transition: 0.3s;
+}
+
+.health-inner-content span{
+    font-size: 14px;
+}
+
+.health-inner-content span a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+.health-inner-content .bold{
+    font-weight: 600;
+}
+
+.health-inner-content .bottom h4{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.health-inner-content .bottom h4 a{
+    color: var(--black);
+    text-decoration: none;
+}
+
+.health-inner-content .bottom h4 a:hover{
+    color: var(--yellow);
+    transition: 0.5s;
+}
+
+.app-links{
+    background-color: #e4eaee;
+    border-radius: 10px;
+    height: 100%;
+    position: relative;
+}
+
+.app-links img{
+    width: 100%;
+}
+
+.inner-app-links h4{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.inner-app-links p{
+    justify-content: center;
+    font-size: 14px;
+}
+
+.inner-app-links{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.app-imgs{
+    position: absolute;
+    top: 25%;
+    left: 5%;
+}
+
+.app-imgs ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.app-imgs ul li{
+    margin: 10px;
+}
+
+.app-imgs ul li img{
+    width: 90%;
+}
+
+/*-----------Footer-------------*/
+
+.services img{
+    height: 40px;
+    max-width: 100%;
+    margin-top: 8px;
+}
+
+.services div{
+    margin-left: 10px;
+    max-width: 100%;
+}
+
+.services div h5{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footer-links h5{
+    font-weight: 600;
+}
+
+.footer-links p{
+    font-size: 16px;
+    color: var(--footer-text);
+}
+
+.footer-links ul{
+    list-style-type: none;
+    padding-left: 0;
+    color: var(--footer-text);
+}
+
+.footer-links ul li span{
+    font-size: 16px;
+}
+
+.footer-links ul li span.material-symbols-outlined{
+    font-size: 22px;
+    margin-right: 5px;
+}
+
+.footer-links ul li span.txt a{
+    text-decoration: none;
+    color: var(--footer-text);
+    font-weight: 600;
+}
+
+.footer-links ul li span.txt a:hover{
+    color: var(--yellow);
+    transition: 0.5s;
+}
+
+.footer-links ul li a{
+    text-decoration: none;
+    color: var(--footer-text);
+}
+
+.footer-links ul li a:hover{
+    color: var(--yellow);
+    transition: 0.3s;
+}
+
+.footer-links ul li{
+    padding: 6px 0;
+    font-size: 16px;
+}
+
+.footer-add-links{
+    font-size: 14px;
+    color: var(--footer-text);
+}
+
+.footer-add-links a{
+    text-decoration: none;
+    color: var(--footer-text);
+    
+}
+
+.footer-add-links a.aft-need::after{
+    content: "|";
+    margin: 0 10px;
+}
+
+.footer-add-links a:hover{
+    color: var(--yellow);
+    transition: 0.3s;
+}
+
+.copyright{
+    font-size: 14px;
+    color: var(--footer-text);
+}
+
+.footer-paymnets img{
+    max-width: 100%;
+    max-height: 30px;
+}
+
+.footer-socials p{
+    font-size: 14px;
+    display: inline block;
+    color: var(--footer-text);
+}
+
+.footer-socials ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.footer-socials ul li{
+    padding: 0 3px;
+}
+
+.footer-socials ul li a img{
+    background-color: var(--yellow);
+    max-width: 100%;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+}
 
 @media (min-width: 768px){
 
