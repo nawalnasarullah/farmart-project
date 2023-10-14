@@ -204,6 +204,11 @@ body {
     font-weight: 600;
 }
 
+.input-group .btn{
+    background-color: var(--yellow);
+    color: var(--black);
+}
+
 
 /*------------Secondary Nav-----------*/
 
@@ -278,6 +283,12 @@ body {
     padding-right: 8px;
     padding-top: 4px;
     color: var(--dark-gray);
+}
+
+.drop-cat ul{
+    list-style-type: none;
+    padding-left: 7px;
+    font-size: 15px;
 }
 
 
