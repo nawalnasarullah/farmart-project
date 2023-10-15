@@ -110,3 +110,10 @@ incrementButtons.forEach((button, index) => {
         itemCounts[index].innerText = count;
     });
 });
+
+document.getElementById("myForm").addEventListener("submit", function(event) {
+    if (!document.getElementById("name").value || !document.getElementById("email").value) {
+        alert("Name and Email are compulsory fields.");
+        event.preventDefault(); 
+    }
+});

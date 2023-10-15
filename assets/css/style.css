@@ -1052,6 +1052,116 @@ button.owl-next:hover span{
     border-radius: 4px;
 }
 
+
+/**************************************************************************************************/
+
+.product-d-main{
+    background-color: var(--light-gray);
+}
+
+
+/**************************************************************************************************/
+
+.contact-info .row .contact-inner{
+    border-right: 1px solid var(--dark-gray);
+}
+.contact-info div h4{
+    font-size: 21px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.contact-info div h5{
+    font-size: 17px;
+    font-weight: 600;
+    padding: 15px 0;
+}
+
+.contact-info div h6{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--darker-gray);
+    padding: 10px 0;
+}
+
+.contact-info div ul{
+    list-style-type: none;
+    padding-left: 0;
+    align-items: center;
+}
+
+.contact-info div ul li a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+.contact-info div ul li{
+    padding-right: 10px;
+}
+
+.contact-info div ul li a i{
+    font-size: 18px;
+}
+
+.contact-info div ul li a:hover{
+    color: var(--yellow);
+    transition: 0.3s;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;  
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+form {
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+.p-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.p-info .form-group {
+    flex: 1;
+}
+
+#name,
+#email {
+    width: 99%; 
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="submit"]{
+    background-color: var(--yellow);
+    padding: 10 20px;
+    border: 0px;
+    border-radius: 3px;
+    margin-top: 20px;
+}
+
+::placeholder{
+    color: var(--dark-gray);
+}
+
+
 @media (min-width: 768px){
 
 .offset-md-3 {
