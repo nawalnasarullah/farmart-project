@@ -110,6 +110,11 @@ body{
     padding-top: 18px;
 }
 
+.s-h-link{
+    display: flex;
+    align-items: center;
+}
+
 .nav-link .material-symbols-outlined{
     font-size: 26px;
 }
