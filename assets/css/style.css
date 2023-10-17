@@ -308,7 +308,6 @@ body {
 
 .hero-section img{
     width: 100%;
-    object-fit: cover;
 }
 
 .carousel-wrapper{
@@ -1513,7 +1512,9 @@ textarea {
     .carousel-item img{
         width: 90% !important;
         height: 300px !important;
+        object-fit: contain;
     }
+
     .carousel-wrapper{
         position: absolute;
         top: 5%;
@@ -1523,8 +1524,8 @@ textarea {
     }
 
     .hero-img-wrapper img{
-        width: 90%;
         height: 300px !important;
+        object-fit: contain;
     }
 
     .hero-img-wrapper{
@@ -1544,4 +1545,11 @@ textarea {
         top: 93%
     }
 
+  }
+
+  @media only screen and (max-width: 699px){
+
+    .product-countdown{
+        flex-direction: column;
+    }
   }
