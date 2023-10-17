@@ -308,7 +308,7 @@ body {
 
 .hero-section img{
     width: 100%;
-    
+    object-fit: cover;
 }
 
 .carousel-wrapper{
